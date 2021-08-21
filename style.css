@@ -1,0 +1,12 @@
+body{
+    background-image: url('\Yellowfin_Dashboards-1.png'), 
+        /* linear-gradient(135deg, rgba(255, 145, 0, 0.6), white) */
+        /* linear-gradient(135deg, #e66465, #9198e5) */
+        linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c)
+         ;
+    background-color: rgba(255, 145, 0, 0.6);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
