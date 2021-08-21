@@ -1,12 +1,49 @@
-body{
+header{
     background-image: url('\Yellowfin_Dashboards-1.png'), 
-        /* linear-gradient(135deg, rgba(255, 145, 0, 0.6), white) */
-        /* linear-gradient(135deg, #e66465, #9198e5) */
-        linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c)
-         ;
-    background-color: rgba(255, 145, 0, 0.6);
+        /* linear-gradient(135deg, rgba(255, 145, 0, 0.6), white), */
+        /* linear-gradient(135deg, #e66465, #9198e5), */
+        linear-gradient(30deg, #3f87a6, #ebf8e1, #f69d3c);
+    background-color: rgba(255, 145, 0, 0.6) no-repeat ;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.navbar-text{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.navbar-items{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 0.8rem 0;
+}
+
+.navbar-items::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    top: 2rem;
+}
+
+.navbar-items:hover::after{
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.438);
+    transition: height,background-color 0.2s ease;
 }
