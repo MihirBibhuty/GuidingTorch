@@ -51,5 +51,5 @@ header{
     height: 4px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.438);
-    transition: height,background-color 0.2s ease;
+    transition: all 0.3s ease;
 }
