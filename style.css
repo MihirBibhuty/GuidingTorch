@@ -42,13 +42,14 @@ header{
     bottom: 0;
     left: 0;
     height: 0px;
-    width: 100%;
+    width: 0%;
     background-color: rgba(0, 0, 0, 0);
     top: 2rem;
 }
 
 .navbar-items:hover::after{
     height: 4px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.438);
     transition: height,background-color 0.2s ease;
 }
