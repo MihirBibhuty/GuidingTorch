@@ -45,7 +45,7 @@ header{
     width: 0%;
     background-color: rgba(0, 0, 0, 0);
     top: 2rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .navbar-items:hover::after{
