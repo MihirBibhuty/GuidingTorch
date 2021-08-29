@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
 
 header{
-    background-image: url('\Yellowfin_Dashboards-1.png'), 
-        /* linear-gradient(135deg, rgba(255, 145, 0, 0.6), white), */
+    background-image: 
+        /* url('\Yellowfin_Dashboards-1.png'),  */
+        linear-gradient(250deg, #390ca39c, rgba(255, 255, 255, 0.568));
         /* linear-gradient(135deg, #e66465, #9198e5), */
-        linear-gradient(30deg, #3f87a6, #ebf8e1, #f69d3c);
+        /* linear-gradient(30deg, #3f87a6, #ebf8e1, #f69d3c); */
     background-color: rgba(255, 145, 0, 0.6) no-repeat ;
     background-size: cover;
     background-position: center top;
@@ -14,6 +17,8 @@ header{
     height: 100vh;
     width: 100%;
 }
+
+/* ---------------------------------------- */
 
 .navbar{
     display: flex;
@@ -34,22 +39,32 @@ header{
     text-decoration: none;
     color: black;
     padding: 0.8rem 0;
+    font-family: 'Anton', sans-serif;
+    font-size: calc( 1vw + 0.7rem );
 }
 
 .navbar-items::after{
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 1vw;
     left: 0;
     height: 0px;
     width: 0%;
     background-color: rgba(0, 0, 0, 0);
-    top: 2rem;
-    transition: all 1s ease-in-out;
+    /* top: 3rem; */
+    transition: width 0.9s ease-in-out;
 }
 
 .navbar-items:hover::after{
-    height: 2px;
+    height: 3px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+/* ------------------------------------------------ */
+
+.hero_desc{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
